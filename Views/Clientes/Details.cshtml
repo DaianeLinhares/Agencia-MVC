@@ -1,0 +1,58 @@
+﻿@model AgenciaComBack.Models.Cliente
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+<main>
+    <div class="contato">
+        <div class="col-sm-5">
+            <div class="modal-content">
+                <h1>Detalhes</h1>
+                <div>
+                    <h4>Cliente</h4>
+                    <hr />
+                    <div class="modal-header">
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Nome)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Nome)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Sobrenome)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Sobrenome)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Email)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Email)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Cidade)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Cidade)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Destino)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Destino.NomeDestino)
+                            </dd>
+                        </dl>
+                    </div>
+                    <div>
+                        <a asp-action="Edit" asp-route-id="@Model?.IdCliente" class="btn btn-primary">Editar</a> |
+                        <a asp-action="Index" class="btn btn-primary">Ver Lista</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

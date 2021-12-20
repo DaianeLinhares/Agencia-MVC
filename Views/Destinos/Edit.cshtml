@@ -1,0 +1,49 @@
+﻿@model AgenciaComBack.Models.Destino
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+
+<main>
+    <div class="contato">
+        <div class="col-sm-5">
+            <div class="modal-content">
+                <h1>Editar</h1>
+                <h4>Destino</h4>
+                <hr />
+                <div class="modal-header">
+                    <div class="col-md-8">
+                        <form asp-action="Edit">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <input type="hidden" asp-for="IdDestino" />
+                            <div class="form-group">
+                                <label asp-for="NomeDestino" class="control-label">Destino</label>
+                                <input asp-for="NomeDestino" class="form-control" />
+                                <span asp-validation-for="NomeDestino" class="text-danger"></span>
+                            </div>
+                            <div class="form-group">
+                                <label asp-for="Date" class="control-label">Data</label>
+                                <input asp-for="Date" class="form-control" />
+                                <span asp-validation-for="Date" class="text-danger"></span>
+                            </div>
+                            <br />
+                            <div class="form-group">
+                                <input type="submit" value="Salvar" class="btn btn-primary" />
+                            </div>
+                            <br />
+                            <div>
+                                <a asp-action="Index" class="btn btn-primary">Ver Lista</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

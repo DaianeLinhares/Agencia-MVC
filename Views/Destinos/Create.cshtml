@@ -1,0 +1,45 @@
+﻿@model AgenciaComBack.Models.Destino
+
+@{
+    ViewData["Title"] = "Create";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<div class="contato">
+    <div class="col-sm-5">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Cadastro Destino</h5>
+            </div>
+            <div class="mb-3 ">
+                <form asp-action="Create">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">
+                        <label asp-for="NomeDestino" class="control-label"> Destino</label>
+                        <input asp-for="NomeDestino" class="form-control" />
+                        <span asp-validation-for="NomeDestino" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Date" class="control-label">Data</label>
+                        <input asp-for="Date" class="form-control" />
+                        <span asp-validation-for="Date" class="text-danger"></span>
+                    </div>
+
+                    <br />
+                    <div class="form-group">
+                        <input type="submit" value="Enviar" class="btn btn-primary" />
+                    </div>
+                </form>
+                <br />
+                <a asp-action="Index" class="btn btn-primary">Ver Lista</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

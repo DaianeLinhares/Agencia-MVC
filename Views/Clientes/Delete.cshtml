@@ -1,0 +1,60 @@
+﻿@model AgenciaComBack.Models.Cliente
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+
+<main>
+    <div class="contato">
+        <div class="col-sm-6">
+            <div class="modal-content">
+                <h1 class="alert-danger">Deletar</h1>
+                <h3>Tem certeza que deseja deletar?</h3>
+                <div>
+                    <h4>Cliente</h4>
+                    <hr />
+                    <div class="modal-header">
+                        <dl class="row">
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Nome)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Nome)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Sobrenome)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Sobrenome)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Email)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Email)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Cidade)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Cidade)
+                            </dd>
+                            <dt class="col-sm-2">
+                                @Html.DisplayNameFor(model => model.Destino)
+                            </dt>
+                            <dd class="col-sm-10">
+                                @Html.DisplayFor(model => model.Destino.NomeDestino)
+                            </dd>
+                        </dl>
+                        <form asp-action="Delete">
+                            <input type="hidden" asp-for="IdCliente" />
+                            <input type="submit" value="Deletar" class="btn btn-danger" /> <br /> <br />
+                            <a asp-action="Index" class="btn btn-primary">Ver Lista</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

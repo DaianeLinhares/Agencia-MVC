@@ -1,0 +1,88 @@
+
+.container-fluid {
+    background-color: #050278;
+}
+
+.navbar-brand {
+    color: #ffd005;
+}
+
+.nav-link {
+    color: #ffd005;
+    font-size: 20px;
+}
+
+.navbar-toggler {
+    background-color: #ffd005;
+}
+
+.logo {
+    background-color: #ffcd05;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+}
+
+.apresentacao {
+    background-image: url(../img/foto01.jpg);
+    background-size: 100%;
+    padding-top: 50px;
+    padding-left: 100px;
+    height: 600px;
+    color:darkgoldenrod
+}
+
+.carousel {
+    display: inline-block;
+    justify-items: center;
+    max-width: 500px;
+}
+
+.grid {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 35px;
+}
+
+.promocao {
+    font-size: 25px;
+    color: #050278;
+}
+
+.precoAntigo {
+    text-decoration: line-through;
+    color: red;
+}
+
+.tituloPromocao {
+    text-align: center;
+}
+
+.rodape {
+    background-color: #ffd005;
+    color: #050278;
+}
+
+.contato {
+    background-color: #6ecbda;
+    background-image: url(../img/foto01.jpg);
+    background-size: 100%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.cadastrar {
+    background-color: #6ecbda;
+    background-image: url(../img/foto01.jpg);
+    background-size: 100%;
+    padding-top: 100px;
+    padding-bottom: 150px;
+    text-align: center;
+}
+
+.fundo {
+    background-color: #6ecbda;
+}

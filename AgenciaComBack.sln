@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AgenciaComBack", "AgenciaComBack.csproj", "{ED481ECC-5427-4BA8-905B-882CB3AFFC2A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED481ECC-5427-4BA8-905B-882CB3AFFC2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED481ECC-5427-4BA8-905B-882CB3AFFC2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED481ECC-5427-4BA8-905B-882CB3AFFC2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED481ECC-5427-4BA8-905B-882CB3AFFC2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7CD498CF-11A3-4F82-BA06-EC42100B49A1}
+	EndGlobalSection
+EndGlobal

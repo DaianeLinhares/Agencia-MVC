@@ -1,0 +1,68 @@
+﻿@model IEnumerable<AgenciaComBack.Models.Cliente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<main>
+    <div class="contato">
+        <div class="col-sm-10">
+            <div class="modal-content">
+                <h1>Indice</h1>
+                <p>
+                    <a asp-action="Create">Cadastrar Cliente</a>
+                </p>
+                <div class="modal-header">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Nome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Sobrenome)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Email)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Cidade)
+                                </th>
+                                <th>
+                                    @Html.DisplayNameFor(model => model.Destino)
+                                </th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Nome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Sobrenome)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Email)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Cidade)
+                                    </td>
+                                    <td>
+                                        @Html.DisplayFor(modelItem => item.Destino.NomeDestino)
+                                    </td>
+                                    <td>
+                                        <a asp-action="Edit" asp-route-id="@item.IdCliente" class="btn btn-primary">Editar</a> |
+                                        <a asp-action="Details" asp-route-id="@item.IdCliente" class="btn btn-primary">Detalhes</a> |
+                                        <a asp-action="Delete" asp-route-id="@item.IdCliente" class="btn btn-danger">Deletar</a>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
