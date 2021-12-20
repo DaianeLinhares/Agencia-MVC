@@ -12,5 +12,5 @@ namespace AgenciaComBack.Models
         public DbSet<Destino> destino { get; set; }
         public DbSet<Contato> contato { get; set; }
     }
-
+    
 }

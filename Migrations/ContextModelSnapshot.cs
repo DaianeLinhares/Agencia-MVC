@@ -27,7 +27,7 @@ namespace AgenciaComBack.Migrations
                     b.Property<int>("IdCliente")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
-
+                    
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("IdCliente"), 1L, 1);
 
                     b.Property<string>("Cidade")
