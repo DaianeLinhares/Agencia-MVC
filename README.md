@@ -9,7 +9,8 @@ Criar projeto aplicando CRUD com as vistas até o modulo 3 do curso.
 - Bootstrap
 - Conceito Mvc
 - C# .Net
--  Sql Server
+- Sql Server
+- IDE Visual Studio
 #
 ### CRUD
 ![image](https://user-images.githubusercontent.com/91790650/160309191-d25e50d7-7a43-4668-9c69-7c8f9c4145c2.png)
