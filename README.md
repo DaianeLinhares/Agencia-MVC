@@ -1,7 +1,7 @@
 # Projeto Individual - Recode Pro - Modulo 3
 
 ## Obejetivo
-Criar projeto aplicando CRUD com as vistas até o modulo 3 do curso.
+Criar projeto aplicando CRUD com as tecnologias vistas até o modulo 3 do curso.
 
 ## Tecnologias 
 - Html
